@@ -1,0 +1,23 @@
+name: Developer_Branch_CI
+
+on:
+  push:
+    branches:
+      - 'XPNS-*'
+
+jobs:
+  CI-Steps:
+    runs-on: self-hosted
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: Unit Tests
+        run: echo unit tests
+
+      - name: Integration Tests
+        run: echo Integration Tests
+
+      - name: code quality
+        run: echo code quality
+
