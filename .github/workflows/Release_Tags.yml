@@ -1,4 +1,4 @@
-name: Release_Tags
+name: Release_Tags.yml
 
 on:
   push:
@@ -7,19 +7,4 @@ on:
 
 jobs:
   check-bats-version:
-    runs-on: self-hosted
-    steps:
-      - name: checkout
-        uses: actions/checkout@v4
-
-      - name: SAST scans
-        run: echo SAST scans
-
-      - name: SCA scans
-        run: echo SCA scans
-
-      - name: secret detection in source code
-        run: echo secret detection in source code
-
-      - name: artifact produce
-        run: echo artifact produce
+    uses: madhan-46/github-actions/.github/workflows/Release_Tags.yml@main

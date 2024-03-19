@@ -1,4 +1,4 @@
-name: Developer_Pull_Requests
+name: Developer_Pull_Requests.yml
 
 on:
   pull_request:
@@ -7,22 +7,4 @@ on:
 
 jobs:
   check-bats-version:
-    runs-on: self-hosted
-    steps:
-      - name: checkout
-        uses: actions/checkout@v4
-
-      - name: unit tests
-        run: echo unit tests
-
-      - name: integration tests
-        run: echo integration tests
-
-      - name: SAST scans
-        run: echo SAST Scans
-
-      - name: Detect Secrets in source code
-        run: echo detect secrets in source code
-
-      - name: code quality
-        run: echo code quality
+    uses: madhan-46/github-actions/.github/workflows/Developer_Pull_Requests.yml@main

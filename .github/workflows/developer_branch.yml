@@ -1,4 +1,4 @@
-name: Developer_Branch_CI
+name: Developer_Branch_CI.yml
 
 on:
   push:
@@ -7,17 +7,4 @@ on:
 
 jobs:
   CI-Steps:
-    runs-on: self-hosted
-    steps:
-      - name: checkout
-        uses: actions/checkout@v4
-
-      - name: Unit Tests
-        run: echo unit tests
-
-      - name: Integration Tests
-        run: echo Integration Tests
-
-      - name: code quality
-        run: echo code quality
-
+    uses: madhan-46/github-actions/.github/workflows/Developer_Branch_CI.yml@main
