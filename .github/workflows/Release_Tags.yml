@@ -7,4 +7,4 @@ on:
 
 jobs:
   check-bats-version:
-    uses: madhan-46/github-actions/.github/workflows/Release_Tags.yml@main
+    uses: MMR-46org/github-actions/.github/workflows/Release_Tags.yml@main
