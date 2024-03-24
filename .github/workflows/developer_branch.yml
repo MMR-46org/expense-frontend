@@ -6,11 +6,12 @@ on:
       - 'XPNS-*'
 
 
-env:
-  service_name: expense-frontend
+
 
 
 jobs:
   CI-Steps:
     uses: MMR-46org/github-actions/.github/workflows/Developer_Branch_CI.yml@main
     secrets: inherit
+    with:
+      service_name: expense-frontend

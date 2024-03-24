@@ -13,3 +13,5 @@ jobs:
   check-bats-version:
     uses: MMR-46org/github-actions/.github/workflows/Release_Tags.yml@main
     secrets: inherit
+    with:
+      service_name: expense-frontend
