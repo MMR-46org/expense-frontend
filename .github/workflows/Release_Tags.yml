@@ -3,7 +3,7 @@ name: Release_Tags.yml
 on:
   push:
     tags:
-      - "v*"
+      - "*"
 
 env:
   service_name: expense-frontend
