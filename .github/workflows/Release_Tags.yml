@@ -5,8 +5,8 @@ on:
     tags:
       - "*"
 
-env:
-  service_name: expense-frontend
+#env:
+#  service_name: expense-frontend
 
 
 jobs:
